@@ -19,22 +19,26 @@ Este sistema maneja la administración de inventarios, ventas de celulares, con 
  APLICANDO PRINCIPIOS S.O.L.I.D
 ===============
 
-   1. Principio de Responsabilidad Única (SRP)
+*1. Principio de Responsabilidad Única (SRP)*
      
-Capa de Datos:
+-Capa de Datos:
 Inventario: Define claramente las operaciones que se pueden realizar sobre el inventario.
+
 ProductoFactory, CelularFactory. Cada fábrica se centra en la creación de un tipo específico de producto.
 
-Capa de Negocio:
+-Capa de Negocio:
 
 AdministradorInventario, Se ocupa exclusivamente de la gestión del inventario.
+
 AdministradorVentas: Maneja todas las operaciones relacionadas con las ventas.
 
-Capa de Presentación:
+-Capa de Presentación:
 
 VentaCelularesUI, Se dedica únicamente a la interacción con el usuario, mostrando menús y recogiendo entradas.
 
-   2. Principio de Abierto/Cerrado (OCP)
+
+
+   *2. Principio de Abierto/Cerrado (OCP)*
       
 Capa de Datos: Las interfaces como Inventario.java permiten que nuevas implementaciones del manejo de inventario sean añadidas sin alterar el código existente.
 
@@ -42,25 +46,32 @@ Capa de Negocio: EstadoVenta.java y sus implementaciones permiten que el proceso
 
 Capa de Presentación: VentaCelularesUI.java podría ser extendida con nuevas funcionalidades de menú sin necesidad de modificar las funcionalidades existentes.
 
+ 
+   
    3. Principio de Sustitución de Liskov (LSP)
       
 Capa de Datos: ProductoFactory y sus implementaciones como CelularFactory aseguran que los productos creados sean intercambiables bajo el mismo tipo base.
 
 Capa de Negocio: Producto, Celular: Celular puede sustituir Producto en cualquier función que requiera un Producto.
 
+  
+   
    4. Principio de Segregación de la Interfaz (ISP)
       
 Capa de Datos: Inventario proporciona solo los métodos necesarios para las operaciones de inventario, lo que evita que las clases implementadoras tengan que implementar métodos irrelevantes.
 
 Capa de Negocio: Interfaces como Vendible aseguran que los objetos que deben ser vendidos implementen solo los métodos necesarios para esa función.
   
+  
+   
    5. Principio de Inversión de Dependencias (DIP)
-       
+
 Capa de Datos: No hay una instancia directa, pero la separación de las interfaces y las implementaciones sugiere que se podría aplicar si las clases de datos dependen de abstracciones en lugar de concretos.
 
 Capa de Negocio: AdministradorVentas depende de la abstracción Inventario y no de una implementación concreta, lo que facilita el mantenimiento y la extensibilidad.
 
 Capa de Presentación: Main ,configura y lanza la interfaz de usuario dependiendo de las abstracciones y no de las clases concretas de las capas de datos o negocio.
+
 
 PATRONES DE DISEÑO:
 ==================
