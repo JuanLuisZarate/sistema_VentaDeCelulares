@@ -23,8 +23,10 @@ Este sistema maneja la administración de inventarios, ventas de celulares, con 
      
 Capa de Datos:Inventario: Define claramente las operaciones que se pueden realizar sobre el inventario.
 ProductoFactory, CelularFactory. Cada fábrica se centra en la creación de un tipo específico de producto.
+
 Capa de Negocio:AdministradorInventario, Se ocupa exclusivamente de la gestión del inventario.
-AdministradorVentas: Maneja todas las operaciones relacionadas con las ventas.
+         AdministradorVentas: Maneja todas las operaciones relacionadas con las ventas.
+
 Capa de Presentación: VentaCelularesUI, Se dedica únicamente a la interacción con el usuario, mostrando menús y recogiendo entradas.
 
    2. Principio de Abierto/Cerrado (OCP)
