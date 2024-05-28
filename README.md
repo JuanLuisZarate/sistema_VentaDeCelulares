@@ -1,3 +1,4 @@
+*======= GUIA ========*
 Este proyecto (sistema) se enfoca en el modulo de venta de celulares.
 requisitos tener java (se recomienda la version actual), jdk o sdk instalado dependiendo el id que utilizara.
 ID Se utilizao IntelliJ IDEA comunity 2023.2.2, si tiene otro tambien podria clonarlo.
