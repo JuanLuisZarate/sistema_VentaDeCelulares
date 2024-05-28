@@ -16,7 +16,7 @@ Este sistema maneja la administración de inventarios, ventas de celulares, con 
 3 . Procesar Ventas: Realizar ventas de celulares, actualizar el inventario y mostrar el estado de la factura.
    
 
- APLICANDO PRRINCIPIOS S.O.L.I.D
+ APLICANDO PRINCIPIOS S.O.L.I.D
 ===============
 
    1. Principio de Responsabilidad Única (SRP)
