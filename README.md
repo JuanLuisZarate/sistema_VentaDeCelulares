@@ -100,7 +100,7 @@ Para el sistema de ventas, AdministradorVentas puede tener diferentes estados de
 ARQUITECTURA EN 3 CAPAS:
 ========================
 
- - Capa de acceso a datos: datos
+ *- Capa de acceso a datos: datos*
    
 CelularFactory: Fábrica para crear instancias de Celular, posiblemente con diferentes configuraciones o especificaciones.
 
@@ -111,7 +111,7 @@ GestorInventario: Si interactúa directamente con la base de datos o maneja la p
 Inventario: Si su función es principalmente mantener el estado de los inventarios, podría ir aquí o en negocio dependiendo de cómo se implemente el acceso a datos.
 
 
- - Capa de negocio: negocio
+ *- Capa de negocio: negocio*
    
 AdministradorInventario: Gestiona las operaciones del inventario.
 
@@ -126,6 +126,6 @@ Producto: Podría representar diferentes tipos de productos gestionados en el si
 EstadoVenta: Enumeración que podría manejar diferentes estados de una venta ( PreparandoVenta, VentaExitosa, VentaFallida).
 
 
- - Capa de presentación: presentacion
+ *- Capa de presentación: presentacion*
    
 SistemaVentaCelulares: Clase principal que puede actuar como controlador en una interfaz de usuario, maneja la interacción entre la UI y la lógica de negocio.
