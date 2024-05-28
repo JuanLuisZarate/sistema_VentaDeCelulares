@@ -48,7 +48,7 @@ Capa de Presentación: VentaCelularesUI.java podría ser extendida con nuevas fu
 
  
    
-   3. Principio de Sustitución de Liskov (LSP)
+   *3. Principio de Sustitución de Liskov (LSP)*
       
 Capa de Datos: ProductoFactory y sus implementaciones como CelularFactory aseguran que los productos creados sean intercambiables bajo el mismo tipo base.
 
@@ -56,7 +56,7 @@ Capa de Negocio: Producto, Celular: Celular puede sustituir Producto en cualquie
 
   
    
-   4. Principio de Segregación de la Interfaz (ISP)
+   *4. Principio de Segregación de la Interfaz (ISP)*
       
 Capa de Datos: Inventario proporciona solo los métodos necesarios para las operaciones de inventario, lo que evita que las clases implementadoras tengan que implementar métodos irrelevantes.
 
@@ -64,7 +64,7 @@ Capa de Negocio: Interfaces como Vendible aseguran que los objetos que deben ser
   
   
    
-   5. Principio de Inversión de Dependencias (DIP)
+   *5. Principio de Inversión de Dependencias (DIP)*
 
 Capa de Datos: No hay una instancia directa, pero la separación de las interfaces y las implementaciones sugiere que se podría aplicar si las clases de datos dependen de abstracciones en lugar de concretos.
 
@@ -75,20 +75,23 @@ Capa de Presentación: Main ,configura y lanza la interfaz de usuario dependiend
 
 PATRONES DE DISEÑO:
 ==================
-Patrón Creacional : Abstract factory
+*Patrón Creacional : Abstract factory*
 
 Producto y Celular son parte del inventario y pueden beneficiarse de una fábrica abstracta que crea diferentes tipos de productos vendibles.
 
 -Interfaz ProductoFactory: Define el método para crear productos.
+
 - Clases Concretas CelularFactory: Implementa ProductoFactory para crear instancias de Celular.
 
-Patrón Estructural : Bridge
+*Patrón Estructural : Bridge*
 AdministradorInventario y AdministradorVentas pueden ser abstraídos de la implementación específica del inventario.
 
 -Interface GestorInventario: Una abstracción para la gestión del inventario.
+
 -Implementación Concreta InventarioCelulares: Implementa GestorInventario manejando el inventario específico de celulares.
 
-Patrón de comportamiento: State
+*Patrón de comportamiento: State*
+
 Para el sistema de ventas, AdministradorVentas puede tener diferentes estados de venta, como PreparandoVenta, VentaExitosa, y VentaFallida.
 
 -Interface EstadoVenta y clases concretas para cada estado del proceso de ventas.
