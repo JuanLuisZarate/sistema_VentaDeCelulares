@@ -103,18 +103,28 @@ ARQUITECTURA EN 3 CAPAS:
  - Capa de acceso a datos: datos
    
 CelularFactory: Fábrica para crear instancias de Celular, posiblemente con diferentes configuraciones o especificaciones.
+
 ProductoFactory: Similar a CelularFactory, pero para otros productos.
+
 GestorInventario: Si interactúa directamente con la base de datos o maneja la persistencia del estado del inventario.
+
 Inventario: Si su función es principalmente mantener el estado de los inventarios, podría ir aquí o en negocio dependiendo de cómo se implemente el acceso a datos.
+
 
  - Capa de negocio: negocio
    
 AdministradorInventario: Gestiona las operaciones del inventario.
+
 AdministradorVentas: Maneja las operaciones de ventas.
+
 Celular: Define la estructura y comportamiento de los objetos Celular.
+
 InventarioCelulares: Específica para operaciones sobre el inventario de celulares.
+
 Producto: Podría representar diferentes tipos de productos gestionados en el sistema, no solo celulares.
+
 EstadoVenta: Enumeración que podría manejar diferentes estados de una venta ( PreparandoVenta, VentaExitosa, VentaFallida).
+
 
  - Capa de presentación: presentacion
    
