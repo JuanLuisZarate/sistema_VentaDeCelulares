@@ -3,7 +3,7 @@ requisitos tener java (se recomienda la version actual), jdk o sdk instalado dep
 ID Se utilizao IntelliJ IDEA comunity 2023.2.2, si tiene otro tambien podria clonarlo.
 
 Si quieres hacer correr el proyecto debes de clonar este proyecto en tu computadora utilizando git (github)
-Debes ejecutar es (Run) en  'sistema_VentaDeCelulares/com/arquitecturaTresCapas/Main'
+Debes ejecutar es (Run) en  'sistema_VentaDeCelulares/src/com/arquitecturaTresCapas/Main'
 Te dezplazara un menu con todas las operaciones siguelas y podras probar todas las funcionalidades:
 
 El módulo que estamos utilizando es la venta de celulares.
